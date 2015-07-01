@@ -1,0 +1,39 @@
+Copyright 2015 Two Bulls Holding Pty Ltd
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+
+TBStartAllJoyn
+
+http://higgns.com/tbstartalljoyn
+
+To simplify the prototyping of an AllJoyn enabled device. Ideally with minimal knowledge of AllJoyn itself, you will
+be able to start a service advertising on an AllJoyn network be further able to interact with that service as per
+the customized functionality being prototyped. As a particular use case, this will enable a device to be visible and
+interactable with Higgns (www.higgns.com).
+
+Some basic concepts:
+
+	* AllJoyn Router/Daemon - the device wide mechanism by which network comms are established between devices in an AllJoyn context.
+	* BusObject(Helper) - the customized implementation class that provides the prototyped interface that gets proxied to other peers.
+	* Event - an outgoing Signal with a human readable description that can be used as a trigger.
+	* Action - a callable Method with a human readable description that can be used to implement behaviour. 
+
+This example wraps up the complexity of setting up an appropriate configured BusObject by making some simplifying assumptions
+and that allows very fast prototyping of a functional AllJoyn enabled device.
+
+
+TBStartAllJoyn is built on top of:
+
+tinyxml2 - code by Lee Thomason (www.grinninglizard.com)
+AllJoyn - code by AllSeen Alliance (allseenalliance.org)
